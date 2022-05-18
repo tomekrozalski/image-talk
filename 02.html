@@ -11,9 +11,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Image talk :: 01</title>
+    <title>Image talk :: 02</title>
   </head>
-  <body>
+  <body class="responsive">
     <nav>
       <ul>
         <li><a href="01.html">01</a></li>
@@ -26,11 +26,23 @@
         <li><a href="08.html">08</a></li>
       </ul>
     </nav>
-    <h1>Chapter 1: Things were easy</h1>
-    <p>Image wrapper 400 x auto</p>
+    <h1>Chapter 2: Then came responsiveness</h1>
+    <p>Image wrapper 400/600 x auto</p>
     <div class="image-wrapper">
-      <img alt="" src="img/animal-400x600.jpg" />
+      <img
+        alt=""
+        src="img/animal-400x600.jpg"
+        srcset="img/animal-400x600.jpg 1024w, img/animal-600x900.jpg 1240w"
+      />
     </div>
+    <code>
+      .wrapper { width: 400px }<br /><br />
+
+      @media (min-width: 1024px) {<br />
+      &nbsp;&nbsp;.wrapper { width: 600px }<br />
+      }<br />
+    </code>
+    <hr />
     <script src="scripts/transformExamples.js"></script>
   </body>
 </html>

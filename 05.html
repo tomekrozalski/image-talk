@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Image talk :: 01</title>
+    <title>Image talk :: 05</title>
   </head>
   <body>
     <nav>
@@ -26,11 +26,17 @@
         <li><a href="08.html">08</a></li>
       </ul>
     </nav>
-    <h1>Chapter 1: Things were easy</h1>
+    <h1>Chapter 5: sizes for the rescue</h1>
     <p>Image wrapper 400 x auto</p>
     <div class="image-wrapper">
-      <img alt="" src="img/animal-400x600.jpg" />
+      <img
+        alt=""
+        src="img/animal-400x600.jpg"
+        srcset="img/animal-400x600.jpg 400w, img/animal-800x1200.jpg 800w"
+        sizes="400px"
+      />
     </div>
+    <hr />
     <script src="scripts/transformExamples.js"></script>
   </body>
 </html>

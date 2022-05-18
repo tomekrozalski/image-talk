@@ -1,4 +1,6 @@
 (function () {
-  const code = document.querySelector("code");
-  code.innerText = code.innerHTML;
+  const source = document.querySelector(".image-wrapper");
+  const code = document.createElement("code");
+  code.innerText = source.innerHTML;
+  document.body.appendChild(code);
 })();

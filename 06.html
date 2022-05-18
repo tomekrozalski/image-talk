@@ -11,9 +11,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Image talk :: 01</title>
+    <title>Image talk :: 06</title>
   </head>
-  <body>
+  <body class="responsive">
     <nav>
       <ul>
         <li><a href="01.html">01</a></li>
@@ -26,11 +26,29 @@
         <li><a href="08.html">08</a></li>
       </ul>
     </nav>
-    <h1>Chapter 1: Things were easy</h1>
-    <p>Image wrapper 400 x auto</p>
+    <h1>Chapter 6: power of sizes</h1>
+    <p>Image wrapper 400/600 x auto</p>
     <div class="image-wrapper">
-      <img alt="" src="img/animal-400x600.jpg" />
+      <img
+        alt=""
+        src="img/animal-400x600.jpg"
+        srcset="
+          img/animal-400x600.jpg    400w,
+          img/animal-600x900.jpg    600w,
+          img/animal-800x1200.jpg   800w,
+          img/animal-1200x1800.jpg 1200w
+        "
+        sizes="(min-width: 1024px) 600px, 400px"
+      />
     </div>
+    <code>
+      .wrapper { width: 400px }<br /><br />
+
+      @media (min-width: 1024px) {<br />
+      &nbsp;&nbsp;.wrapper { width: 600px }<br />
+      }<br />
+    </code>
+    <hr />
     <script src="scripts/transformExamples.js"></script>
   </body>
 </html>
