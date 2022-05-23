@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Image talk :: 02</title>
   </head>
-  <body class="responsive">
+  <body>
     <nav>
       <ul>
         <li><a href="01.html">01</a></li>
@@ -24,25 +24,18 @@
         <li><a href="06.html">06</a></li>
         <li><a href="07.html">07</a></li>
         <li><a href="08.html">08</a></li>
+        <li><a href="09.html">09</a></li>
+        <li><a href="10.html">10</a></li>
       </ul>
     </nav>
-    <h1>Chapter 2: Then came responsiveness</h1>
-    <p>Image wrapper 400/600 x auto</p>
+    <h1>Chapter 2: But not always</h1>
+    <p>Image wrapper 400 x auto</p>
     <div class="image-wrapper">
       <img
         alt=""
-        src="img/animal-400x600.jpg"
-        srcset="img/animal-400x600.jpg 1024w, img/animal-600x900.jpg 1240w"
+        src="https://images.unsplash.com/photo-1652303308996-0a0c780587f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80"
       />
     </div>
-    <code>
-      .wrapper { width: 400px }<br /><br />
-
-      @media (min-width: 1024px) {<br />
-      &nbsp;&nbsp;.wrapper { width: 600px }<br />
-      }<br />
-    </code>
-    <hr />
     <script src="scripts/transformExamples.js"></script>
   </body>
 </html>

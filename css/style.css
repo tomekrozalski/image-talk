@@ -16,6 +16,10 @@ body {
   color: var(--black);
 }
 
+body.percent {
+  width: 50%;
+}
+
 body.fluid {
   width: 50vw;
 }
